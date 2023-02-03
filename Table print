@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int constant;
+	cout<<"Enter a number"<<endl;
+	cin>>constant;
+	for(int i=1;i<=10;i++)
+	{
+		cout<<constant<<"*"<<i;
+		cout<<"="<<constant*i<<endl;
+	}
+}
