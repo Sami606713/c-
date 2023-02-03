@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	//first we declear two variable
+	float faranite, celcius;
+	//Take input from user
+	cout<<"Enter Faranite Temp"<<endl;
+	cin>>faranite;
+	
+	cout<<"Your faranite Temp is=";
+	cout<<faranite<<endl;
+	
+//Now we convert faranite into celcius
+	celcius=(faranite-32)*5/9;
+	cout<<"Your celcius Tem is=";
+	cout<<celcius<<endl;
+	
