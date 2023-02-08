@@ -1,0 +1,87 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int money,  pass, choice, withdraw;
+	
+	cout<<"how muchMoney in your account"<<endl;
+	cin>>money;
+	
+	cout<<"enter password"<<endl;
+	cin>>pass;
+	
+	if(pass==2244)
+	{
+		cout<<"welcome\nselect choice 1 for transation and 2 for quit"<<endl;
+		cout<<"1)Transation\n2)Quit"<<endl;
+		cin>>choice;
+		if(choice==1)
+		{
+			cout<<"select op for widraw"<<endl;
+			cout<<"1)20000\n2)10000\n3)5000\n4)other"<<endl;
+			cin>>withdraw;
+			switch(withdraw)
+			{
+				case 1:
+				if(20000<=money) 
+				{
+					cout<<"collect 20000"<<endl;
+				}
+				else
+				{
+					cout<<"no enough balance";
+				}
+				break;
+				case 2:
+				if(10000<=money) 
+				{
+					cout<<"collect 10000"<<endl;
+				}
+				else
+				{
+					cout<<"no enough balance";
+				}
+				break;
+				case 3:
+				if(5000<=money) 
+				{
+					cout<<"collect 5000"<<endl;
+				}
+				else
+				{
+					cout<<"no enough balance";
+				}
+				break;
+				
+				case 4:
+				int cash;
+				cout<<"Enter amount"<<endl;
+				cin>>cash;
+				if(cash<=money) 
+				{
+					cout<<"collect"<<cash<<endl;
+					cout<<"new balance is=";
+					cout<<cash-money;
+				}
+				else
+				{
+					cout<<"no enough balance";
+				}
+				default:
+				cout<<"select given choices";				}
+		}
+		else if(choice==2)
+		{
+			cout<<"quit"<<endl;
+		}
+		else
+		{
+			cout<<"Enter a valid choice"<<endl;
+		}
+		
+	}
+	else
+	{
+		cout<<"Enter correct password"<<endl;
+	}
+}
