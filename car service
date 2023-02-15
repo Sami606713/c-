@@ -1,0 +1,87 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	//--------Declear  variable--------//
+	int days;
+	char employee, agreement;
+	string time;
+	
+	cout<<"Are you employee y for yes and N for no"<<endl;
+	cin>>employee;
+	
+	//-------checking condituons--------//
+	if(employee=='y')
+	{
+		string name;
+		cout<<"Enter your name"<<endl;
+		cin>>name;
+		cout<<"\tMiss"<<name<<" Welcome to car rent service"<<endl;
+		//--------agreement-------//
+		cout<<"read agreement"<<endl;
+		cout<<"1)Please return car at exit time.\n2)If time is late you must pay fine.\n3)Late retutn per day charge is 1000."<<endl;
+				
+			cout<<"\nAre you agree for agreement y for yes and n for no"<<endl;
+
+			cin>>agreement;
+		if(agreement=='y')
+		{
+			int choice;
+			cout<<"Enter choice"<<endl;	cout<<"1)Honda: rent charge 5000\n2)Civic: rent charge 6000\n3)Yahama: rent charge 7000\n4)Corola: rent charge 8000"<<endl;
+			cin>>choice;
+//-----------using switch statement--------//
+			switch(choice)
+			{
+				case 1:
+				cout<<" how many days did you need"<<endl;
+				cin>>days;
+				cout<<"In which time did you need"<<endl;
+				cin>>time;
+				cout<<"Please pay the cash R.s"<<5000*days;
+				cout<<"\npick the car tomorrow at"<<time<<endl;
+				break;
+				
+				case 2:
+				cout<<"how many days did you need"<<endl;
+				cin>>days;
+				cout<<"In which time did you need"<<endl;
+				cin>>time;
+				cout<<"Please pay the cash R.s"<<6000*days;
+				cout<<"\npick the car tomorrow at"<<time<<endl;
+				break;
+				
+				case 3:
+				cout<<"how many days did you need"<<endl;
+				cin>>days;
+				cout<<"In which time did you need"<<endl;
+				cin>>time;
+				cout<<"Please pay the cash R.s"<<7000*days;
+				cout<<"\npick the car tomorrow at"<<time<<endl;
+				break;
+				
+				case 4:
+				cout<<"how many days did you need"<<endl;
+				cin>>days;
+				cout<<"In which time did you need"<<endl;
+				cin>>time;
+				cout<<"Please pay the cash R.s"<<8000*days;
+				cout<<"\npick the car tomorrow at"<<time<<endl;
+				break;
+				
+				default:
+				cout<<"no choice in list"<<endl;
+			}
+		}
+		else
+		{
+			cout<<"For rent service you must be agree the agreement"<<endl;
+		}
+	
+	}
+	else
+	{
+		cout<<"you must be employee"<<endl;
+	}
+	cout<<"Thanks for using car rent service";
+		
+}
