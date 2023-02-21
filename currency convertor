@@ -1,0 +1,54 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int amount, option;
+	cout<<"Enter amount"<<endl;
+	cin>>amount;
+	
+	cout<<"\tselsect option\n1)Euro rupees\n2)Bahreen dinar\n3)Dollar\n4)saudi rayal\n5)Japnees yen\n6)Pound\n7)Algerian Dinar\n8)Indian rupees"<<endl;
+	cin>>option;
+	
+	switch(option)
+	{
+		case 1:
+		cout<<amount<<"€ pakistani rupees   is="<<amount/0.0034;
+			break;
+			
+		case 2:
+		cout<<amount<<" BHD in pakistani rupees is="<<amount/0.00136;
+		break;
+		
+		case 3:
+		cout<<amount<<" $ in pakistani rupees is="<<amount/0.00364;
+		break;
+		
+		
+		case 4:
+		cout<<amount<<" SAR in pakistani rupees is="<<amount/0.0153;
+		break;
+		
+		case 5:
+		cout<<amount<<" YENin pakistani rupees   is="<<amount/0.4761;
+			break;
+			
+				
+		case 6:
+		cout<<amount<<" pound in pakistani rupees is="<<amount/0.003040;
+			break;
+			
+				
+		case 7:
+		cout<<amount<<"Algerian dinar inn pakistani rupees is="<<amount/0.50251;
+			break;
+			
+				
+		case 8:
+		cout<<amount<<"indian rupees in pakistani rupees is="<<amount/0.30395;
+			break;
+		
+		default:
+		cout<<"No option available"<<endl;
+		
+	}
+}
