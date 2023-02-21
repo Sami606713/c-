@@ -1,0 +1,322 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	//variables declear 
+	int choice, time, passport;
+	int seat=20;
+	char ticket, book, payment;
+	string date, fname, lname;
+	cout<<"\tWelcome to air line services"<<endl;
+	
+	cout<<"Do you want to book a ticket press y for yes and n for no"<<endl;
+	cin>>ticket;
+	//check condition
+	if(ticket=='y')
+	{
+		cout<<"select country did you travel"<<endl;
+		cout<<"1)Pakistan tp Duabi\n2)Pakistan to Saudia"<<endl;
+		cin>>choice;
+		//ageain make a condition
+		switch(choice)
+		{
+			case 1:
+				cout<<"In which date did you travel"<<endl;
+				cin>>date;
+				cout<<"In which time did you book a ticket"<<endl;
+					cout<<"1)2:00pm\n2)5:00pm\n3)10:00pm"<<endl;
+				cin>>time;
+				switch(time)
+				{
+					case 1:
+						cout<<"\tplease give me your persinal information"<<endl;
+						cout<<"enter your first name"<<endl;
+						cin>>fname;
+						cout<<"enter last name"<<endl;
+						cin>>lname;
+						cout<<"enter passport number"<<endl;
+						cin>>passport;
+						if(passport==12345)
+						{
+							cout<<"\tThanks for giving information"<<endl;
+							cout<<"Are you sure to book a ticket press y for yes and n for no"<<endl;
+							cin>>book;
+							if(book=='y')
+							{
+								cout<<"Pay the cash 81000 and press E"<<endl;
+								cin>>payment;
+								if(payment=='E')
+								{
+									cout<<"\tBooking summary"<<endl;
+									cout<<"Your first name is="<<fname<<endl;
+									cout<<"Your last name is="<<lname<<endl;
+									cout<<"your passport nbr is="<<passport<<endl;
+									cout<<"your seat nbr is="<<seat<<endl;
+									cout<<"Your travel date is="<<date<<endl;;
+									cout<<"your travel time is"<<time<<")2:00pm"<<endl;
+									cout<<"you travel from pak to Dubai"<<endl;
+								}
+								else
+								{
+									cout<<"sorry you did not pay the cash"<<endl;
+								}
+							}
+							else
+							{
+								cout<<"your ticket is cancel"<<endl;
+							}
+						}
+						else
+						{
+							cout<<"Enter correct number"<<endl;
+						}
+						break;
+		
+						case 2:
+						cout<<"\tplease give me your persinal information"<<endl;
+						cout<<"enter your first name"<<endl;
+						cin>>fname;
+						cout<<"enter last name"<<endl;
+						cin>>lname;
+						cout<<"enter passport number"<<endl;
+						cin>>passport;
+						if(passport==12345)
+						{
+							cout<<"\tThanks for giving information"<<endl;
+							cout<<"Are you sure to book a ticket press y for yes and n for no"<<endl;
+							cin>>book;
+							if(book=='y')
+							{
+								cout<<"Pay the cash 81000 and press E"<<endl;
+								cin>>payment;
+								if(payment=='E')
+								{
+									cout<<"\tBooking summary"<<endl;
+									cout<<"Your first name is="<<fname<<endl;
+									cout<<"Your last name is="<<lname<<endl;
+									cout<<"your passport nbr is="<<passport<<endl;
+									cout<<"your seat nbr is="<<seat<<endl;
+									cout<<"Your travel date is="<<date<<endl;;
+									cout<<"your travel time is"<<time<<")5:00pm"<<endl;
+									cout<<"you travel from pak to Dubai"<<endl;
+								}
+								else
+								{
+									cout<<"sorry you did not pay the cash"<<endl;
+								}
+							}
+							else
+							{
+								cout<<"your ticket is cancel"<<endl;
+							}
+						}
+						else
+						{
+							cout<<"Enter correct number"<<endl;
+						}
+						break;
+						
+						case 3:
+						cout<<"\tplease give me your persinal information"<<endl;
+						cout<<"enter your first name"<<endl;
+						cin>>fname;
+						cout<<"enter last name"<<endl;
+						cin>>lname;
+						cout<<"enter passport number"<<endl;
+						cin>>passport;
+						if(passport==12345)
+						{
+							cout<<"\tThanks for giving information"<<endl;
+							cout<<"Are you sure to book a ticket"<<endl;
+							cin>>book;
+							if(book=='y')
+							{
+								cout<<"Pay the cash 81000 and press E"<<endl;
+								cin>>payment;
+								if(payment=='E')
+								{
+									cout<<"\tBooking summary"<<endl;
+									cout<<"Your first name is="<<fname<<endl;
+									cout<<"Your last name is="<<lname<<endl;
+									cout<<"your passport nbr is="<<passport<<endl;
+									cout<<"your seat nbr is="<<seat<<endl;
+									cout<<"Your travel date is="<<date<<endl;;
+									cout<<"your travel time is"<<time<<")10:00pm"<<endl;
+									cout<<"you travel from pak to Dubai"<<endl;
+								}
+								else
+								{
+									cout<<"sorry you did not pay the cash"<<endl;
+								}
+							}
+							else
+							{
+								cout<<"your ticket is cancel"<<endl;
+							}
+						}
+						else
+						{
+							cout<<"Enter correct number"<<endl;
+						}
+						break;
+						
+					default:
+					cout<<"no time availavle"<<endl;	
+				}
+				break;
+				
+				case 2:
+				cout<<"In which date did you travel"<<endl;
+				cin>>date;
+				cout<<"In which time did you book a ticket"<<endl;
+					cout<<"1)2:00pm\n2)5:00pm\n3)10:00pm"<<endl;
+				cin>>time;
+				switch(time)
+				{
+					case 1:
+						cout<<"\tplease give me your persinal information"<<endl;
+						cout<<"enter your first name"<<endl;
+						cin>>fname;
+						cout<<"enter last name"<<endl;
+						cin>>lname;
+						cout<<"enter passport number"<<endl;
+						cin>>passport;
+						if(passport==12345)
+						{
+							cout<<"\tThanks for giving information"<<endl;
+							cout<<"Are you sure to book a ticket press y for yes and n for no"<<endl;
+							cin>>book;
+							if(book=='y')
+							{
+								cout<<"Pay the cash 81000 and press E"<<endl;
+								cin>>payment;
+								if(payment=='E')
+								{
+									cout<<"\tBooking summary"<<endl;
+									cout<<"Your first name is="<<fname<<endl;
+									cout<<"Your last name is="<<lname<<endl;
+									cout<<"your passport nbr is="<<passport<<endl;
+									cout<<"your seat nbr is="<<seat<<endl;
+									cout<<"Your travel date is="<<date<<endl;
+									cout<<"your travel time is"<<time<<")2:00pm"<<endl;
+									cout<<"you travel from pak to Saudia"<<endl;
+								}
+								else
+								{
+									cout<<"sorry you did not pay the cash"<<endl;
+								}
+							}
+							else
+							{
+								cout<<"your ticket is cancel"<<endl;
+							}
+						}
+						else
+						{
+							cout<<"Enter correct number"<<endl;
+						}
+						break;
+		
+						case 2:
+						cout<<"\tplease give me your persinal information"<<endl;
+						cout<<"enter your first name"<<endl;
+						cin>>fname;
+						cout<<"enter last name"<<endl;
+						cin>>lname;
+						cout<<"enter passport number"<<endl;
+						cin>>passport;
+						if(passport==12345)
+						{
+							cout<<"\tThanks for giving information"<<endl;
+							cout<<"Are you sure to book a ticket press y for yes and n for no"<<endl;
+							cin>>book;
+							if(book=='y')
+							{
+								cout<<"Pay the cash 81000 and press E"<<endl;
+								cin>>payment;
+								if(payment=='E')
+								{
+									cout<<"\tBooking summary"<<endl;
+									cout<<"Your first name is="<<fname<<endl;
+									cout<<"Your last name is="<<lname<<endl;
+									cout<<"your passport nbr is="<<passport<<endl;
+									cout<<"your seat nbr is="<<seat<<endl;
+									cout<<"Your travel date is="<<date<<endl;
+									cout<<"your travel time is"<<time<<")5:00pm"<<endl;;
+									cout<<"you travel from pak to Saudia"<<endl;
+								}
+								else
+								{
+									cout<<"sorry you did not pay the cash"<<endl;
+								}
+							}
+							else
+							{
+								cout<<"your ticket is cancel"<<endl;
+							}
+						}
+						else
+						{
+							cout<<"Enter correct number"<<endl;
+						}
+						break;
+						
+						case 3:
+						cout<<"\tplease give me your persinal information"<<endl;
+						cout<<"enter your first name"<<endl;
+						cin>>fname;
+						cout<<"enter last name"<<endl;
+						cin>>lname;
+						cout<<"enter passport number"<<endl;
+						cin>>passport;
+						if(passport==12345)
+						{
+							cout<<"\tThanks for giving information"<<endl;
+							cout<<"Are you sure to book a ticket press y for yes and n for no"<<endl;
+							cin>>book;
+							if(book=='y')
+							{
+								cout<<"Pay the cash 81000 and press E"<<endl;
+								cin>>payment;
+								if(payment=='E')
+								{
+									cout<<"\tBooking summary"<<endl;
+									cout<<"Your first name is="<<fname<<endl;
+									cout<<"Your last name is="<<lname<<endl;
+									cout<<"your passport nbr is="<<passport<<endl;
+									cout<<"your seat nbr is="<<seat<<endl;
+									cout<<"Your travel date is="<<date<<endl;
+									cout<<"your travel time is"<<time<<")10:00pm"<<endl;
+									cout<<"you travel from pak to Saudia"<<endl;
+								}
+								else
+								{
+									cout<<"sorry you did not pay the cash"<<endl;
+								}
+							}
+							else
+							{
+								cout<<"your ticket is cancel"<<endl;
+							}
+						}
+						else
+						{
+							cout<<"Enter correct number"<<endl;
+						}
+						break;
+						
+					default:
+					cout<<"no time availavle"<<endl;	
+				}
+				break;
+					
+			default:
+			cout<<"no one in list"<<endl;	
+		}
+	}
+	else
+	{
+		cout<<"Thanks for coming"<<endl;
+	}
+	
+}
