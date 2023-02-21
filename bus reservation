@@ -1,0 +1,70 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int age, expiry, choice;
+	int seat=2;
+	char ticket;
+	string date, name, id;
+	cout<<"do you want to book a bus tucket"<<endl;
+	cin>>ticket;
+	if(ticket=='y')
+	{
+		cout<<"Enter age"<<endl;
+		cin>>age;
+		if(age>=18||age<=50)
+		{
+			cout<<"Enter your name"<<endl;
+			cin>>name;
+			cout<<"Enter id card no"<<endl;
+			cin>>id;
+			cout<<"Enter id card expiry year"<<endl;
+			cin>>expiry;
+			if(expiry>=2023)
+			{
+				cout<<"select city of travel"<<endl;
+				cout<<"1)Lahore\n2)Karachi"<<endl;
+				cin>>choice;
+				switch(choice)
+				{
+					case 1:
+						cout<<"Enter date of travel"<<endl;
+						cin>>date;
+						cout<<"Booking summary"<<endl;
+						cout<<"your name is="<<name<<endl;
+						cout<<"Your id card no is="<<id<<endl;
+						cout<<"Your seat no is="<<seat<<endl;
+						cout<<"Date of travel is="<<date<<endl;
+						cout<<"Travel from Har to Lah"<<endl;
+					break;
+					
+					case 2:
+						cout<<"Enter date of travel"<<endl;
+						cin>>date;
+						cout<<"Booking summary"<<endl;
+						cout<<"your name is="<<name<<endl;
+						cout<<"Your id card no is="<<id<<endl;
+						cout<<"Your seat no is="<<seat<<endl;
+						cout<<"Date of travel is="<<date<<endl;
+						cout<<"Travel from Har to Kar"<<endl;
+					break;
+					default:
+					cout<<"invalid choice"<<endl;
+				}
+			}
+			else
+			{
+				cout<<"your id card is expire pleaee renew your card and take a journey"<<endl;
+			}
+		}
+		else
+		{
+		cout<<"Bus is not available for you"<<endl;
+		}
+		
+	}
+	else
+	{
+		cout<<"quit"<<endl;
+	}
+}
